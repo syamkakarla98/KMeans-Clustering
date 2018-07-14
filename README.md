@@ -1,7 +1,7 @@
 # [KMeans Clustering Using Python](http://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html)
 
 ## Brief Intro on KMeans Clustering
-* [K-Means clustering](https://en.wikipedia.org/wiki/K-means_clustering) is an iterative algorithm widely used in all data analasis for       finding similarity groups in a data called *_Clusters_.
+* [K-Means clustering](https://en.wikipedia.org/wiki/K-means_clustering) is an iterative algorithm widely used in all data analasis for       finding similarity groups in a data called _Clusters_.
 
 * It is an **unsupervised learning** technique.
 
