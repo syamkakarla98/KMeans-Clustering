@@ -1,13 +1,13 @@
 # [KMeans Clustering Using Python](http://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html)
 
-## Brief Intro on KMeans Clustering
+## Brief Intro to KMeans Clustering
 * [K-Means clustering](https://en.wikipedia.org/wiki/K-means_clustering) is an iterative algorithm widely used in all data analasis for       finding similarity groups in a data called _Clusters_.
 
 * It is an **unsupervised learning** technique.
 
-* It attempts to group individuals in a population together by similarity,but not driven by a specific purpose. 
+* It attempts to group individuals in a population together by similarity, but not driven by a specific purpose. 
 
-* As you don’t have prescribed labels in the data and no class values denoting a prior grouping of the data instances are given, 
+* As you don’t have prescribed labels in the data and no class values denoting a priori grouping of the data instances are given, 
 	In this Repo,let’s seeabout the famous centroid based clustering algorithm — **K-means**a — in a simplest way.
 
 ## Steps to implement KMeans Clustering
@@ -24,5 +24,65 @@
       **K** is chosen randomly or by giving specific initial starting points by the user for finding good reslts.
 
 
-* K-means is used for exploratory **data mining**, you must examine the clustering results anyways to determine which clusters make sense. 
-      The value for k can be decreased if some clusters are too small, and increased if the clusters are too broad.
+* K-means is used for exploratory **data mining**, you must examine the clustering results anyways to determine which clusters make sense. The value for k can be decreased if some clusters are too small, and increased if the clusters are too broad.
+      
+## Example
+
+* Importing all dependencies.
+
+``` python
+	import matplotlib.pyplot as plt
+	import numpy as np
+	from sklearn.datasets.samples_generator import make_blobs
+	from sklearn.cluster import KMeans
+```
+* Creating blobs dataset.
+
+``` python
+	X, y_true = make_blobs(n_samples=300, centers=3,
+                       cluster_std=.50, random_state=0)
+````
+* Scatter plot between two dimensions.
+
+``` python
+	plt.scatter(X[:, 0], X[:, 1], s=20);
+	plt.show()
+````
+* Output of the data before clustering is:
+
+	
+* Applying **kmeans** on the dataset.
+
+``` python
+	kmeans = KMeans(n_clusters=3) 
+	kmeans.fit(X)
+	y_kmeans = kmeans.predict(X)
+````
+* Scatter plot after **k-means** clustering with centroids shown as _black circle_.
+
+``` python
+	plt.scatter(X[:, 0], X[:, 1], c=y_kmeans, s=20, cmap='viridis')
+	centers = kmeans.cluster_centers_
+	plt.scatter(centers[:, 0], centers[:, 1], c='black', s=200, alpha=0.5);
+	plt.show()
+````
+
+## K_Means fails ?
+
+* _Yes_, K-Means algorithm fails for **non-linear** datasets
+* The learning algorithm requires apriori specification of the number of  cluster centers.
+* The use of  Exclusive Assignment - If  there are two highly overlapping data then k-means will not be able to resolve that there 	are two clusters.
+* Applicable only when mean is defined i.e. fails for categorical data.
+* Unable to handle noisy data and outliers.
+* Let us consider the below dataset :
+	
+	
+* By seeing the figure, we can say that there are two clusters but this algorithm doe'n work fine.
+* The blow plot is after k-means on the dataset:
+	
+
+
+
+
+
+
