@@ -91,7 +91,9 @@
 
 
 
+### License:
 
+* This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/syamkakarla98/KMeans-Clustering/blob/master/LICENSE.md) file for details
 
 
 
