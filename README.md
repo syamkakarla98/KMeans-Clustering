@@ -1,4 +1,4 @@
-# [KMeans Clustering ]
+# [KMeans Clustering Using Python] (http://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html)
 
 ## Brief Intro on KMeans Clustering
 * [K-Means clustering](https://en.wikipedia.org/wiki/K-means_clustering) is an iterative algorithm widely used in all data analasis for       finding similarity groups in a data called *_Clusters_.
@@ -14,14 +14,14 @@
 
 Here we implemented k-means clustering using sci-kit learn.
     
-    1.To run a k-means algorithm, you have to randomly initialize three points called the cluster centroids,
+ 1.To run a k-means algorithm, you have to randomly initialize three points called the cluster centroids,
       because I want to group my data into three clusters. 
 
-    2.K-means moves the centroids to the average of the points in a cluster. In other words, 
+ 2.K-means moves the centroids to the average of the points in a cluster. In other words, 
       the algorithm calculates the average of all the points in a cluster and moves the centroid to that average location.
 
-    3.This process is repeated until there is no change in the clusters (or possibly until some other stopping condition is met).
+ 3.This process is repeated until there is no change in the clusters (or possibly until some other stopping condition is met).
       **K** is chosen randomly or by giving specific initial starting points by the user for finding good reslts.
 
-    * K-means is used for exploratory **data mining**, you must examine the clustering results anyways to determine which clusters make sense. 
+* K-means is used for exploratory **data mining**, you must examine the clustering results anyways to determine which clusters make sense. 
       The value for k can be decreased if some clusters are too small, and increased if the clusters are too broad.
