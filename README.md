@@ -1,8 +1,8 @@
 # [KMeans Clustering Using Python](http://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html) 
 
-[![Python 3.6](https://img.shields.io/badge/python-3.6-blue.svg)](https://www.python.org/downloads/release/python-360/)
+[![Python 3.6](https://img.shields.io/badge/python-3.6-green.svg)](https://www.python.org/downloads/release/python-360/)
 
-### Click [here] to download the code.
+### Click [here](https://github.com/syamkakarla98/KMeans-Clustering/releases) to download the code.
 ## Brief Intro to KMeans Clustering
 * [K-Means clustering](https://en.wikipedia.org/wiki/K-means_clustering) is an iterative algorithm widely used in all data analasis for       finding similarity groups in a data called _Clusters_.
 
@@ -11,7 +11,7 @@
 * It attempts to group individuals in a population together by similarity, but not driven by a specific purpose. 
 
 * As you don’t have prescribed labels in the data and no class values denoting a priori grouping of the data instances are given, 
-	In this Repo,let’s seeabout the famous centroid based clustering algorithm — **K-means**a — in a simplest way.
+	In this Repo,let’s seeabout the famous centroid based clustering algorithm — **K-means** — in a simplest way.
 
 ## Steps to implement KMeans Clustering
 
