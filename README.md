@@ -1,5 +1,8 @@
-# [KMeans Clustering Using Python](http://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html)
+# [KMeans Clustering Using Python](http://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html) 
 
+[![Python 3.6](https://img.shields.io/badge/python-3.6-blue.svg)](https://www.python.org/downloads/release/python-360/)
+
+### Click [here] to download the code.
 ## Brief Intro to KMeans Clustering
 * [K-Means clustering](https://en.wikipedia.org/wiki/K-means_clustering) is an iterative algorithm widely used in all data analasis for       finding similarity groups in a data called _Clusters_.
 
