@@ -50,7 +50,8 @@
 ````
 * Output of the data before clustering is:
 
-	
+	![before_clustering](https://user-images.githubusercontent.com/36328597/42724536-cde998d4-8791-11e8-96ac-7ae35591fa91.png)
+
 * Applying **kmeans** on the dataset.
 
 ``` python
@@ -66,6 +67,10 @@
 	plt.scatter(centers[:, 0], centers[:, 1], c='black', s=200, alpha=0.5);
 	plt.show()
 ````
+* The output will be:
+
+	![after_clustering](https://user-images.githubusercontent.com/36328597/42724534-cd6d7d30-8791-11e8-926c-4bf127102658.png)
+
 
 ## K_Means fails ?
 
@@ -76,10 +81,15 @@
 * Unable to handle noisy data and outliers.
 * Let us consider the below dataset :
 	
+	![before_clustering_moons](https://user-images.githubusercontent.com/36328597/42724537-ce229684-8791-11e8-8007-89cb5dda1205.png)
+
 	
 * By seeing the figure, we can say that there are two clusters but this algorithm doe'n work fine.
-* The blow plot is after k-means on the dataset:
+* The below plot is after k-means on the dataset:
 	
+	![after_clustering_moons](https://user-images.githubusercontent.com/36328597/42724535-cdae71fa-8791-11e8-9d69-7a843263ffd0.png)
+
+
 
 
 
